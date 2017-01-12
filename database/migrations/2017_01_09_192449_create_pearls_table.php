@@ -14,8 +14,8 @@ class CreatePearlsTable extends Migration
     {
         Schema::create('pearls', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('pearl');
-            $table->text('child_name');
+            $table->text('pearl');
+            $table->string('child_name');
             $table->string('child_age');
             $table->timestamps();
         });

@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Show Pearl Page</title>
-	</head>
-	<body>
-		<h1>Object {{ $the_id }}</h1>
-		<p>More coming soon...</p>
-	</body>
-</html>
+@extends('layouts.master')
+
+@section('title', $pearl->pearl)
+
+@section('content')
+	<h1>{{ $pearl->pearl }}</h1>
+	<p>{{ $pearl->child_name }}, {{ $pearl->child_age }}</p>
+@endsection
